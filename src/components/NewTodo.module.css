@@ -1,0 +1,53 @@
+.new-todo-container {
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+.title-container {
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+}
+
+.title-container label {
+	font-size: 32px;
+	font-weight: bold;
+	margin-right: 20px;
+}
+
+.title-container input {
+	font-size: 32px;
+	margin-right: 20px;
+}
+
+.desc-container {
+	display: flex;
+	justify-content: center;
+}
+
+.desc-container label {
+	font-size: 32px;
+	font-weight: bold;
+	margin-right: 20px;
+}
+
+.desc-container input {
+	font-size: 32px;
+	margin-right: 20px;
+}
+
+.add-btn {
+	margin: 20px;
+	font-size: 24px;
+	font-weight: bold;
+	width: 500px;
+	height: 70px;
+	border: none;
+	border-radius: 50px;
+	background: #253342;
+	color: white;
+}
