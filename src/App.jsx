@@ -1,7 +1,6 @@
 import NewTodo from "./components/NewTodo";
 import styles from "./App.module.css";
 import { useState } from "react";
-import Card from "./components/UI/Card";
 import TodoItems from "./components/TodoItems";
 
 const INITIAL_DATA = [

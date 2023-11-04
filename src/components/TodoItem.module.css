@@ -1,0 +1,41 @@
+.item-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.btn-wrapper {
+    margin: 15px;
+}
+
+.btn-wrapper button {
+    width:100px;
+    margin:15px;
+    font-size:32px;
+    padding: 5px;
+}
+
+.delete-btn {
+    border: 2px solid salmon;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.delete-btn:hover{
+    background-color:salmon;
+    color:white;
+}
+
+.finish-btn {
+    border: 2px solid rgb(57, 142, 80);
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.finish-btn:hover {
+    background-color: rgb(57, 142, 80);
+    color: white;
+}

@@ -4,16 +4,11 @@ h1 {
 
 .container {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-.item-container {
-    display: flex;
-    width:100%;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    gap:15px;
+    overflow: auto;
+    white-space: nowrap;
 }
