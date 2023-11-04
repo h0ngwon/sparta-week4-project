@@ -9,13 +9,18 @@ const TodoItems = (props) => {
 			<h1>Working</h1>
 			<div className={styles.container}>
 				{props.items.map((item) => (
-					<Card>
-						<TodoItem items={item} />
+					<Card key={item.id}>
+						<TodoItem
+							key={item.id}
+							id={item.id}
+							items={item}
+							onDelete={props.onDeleteItem}
+						/>
 					</Card>
 				))}
 			</div>
 			<h1>Done</h1>
-			<div>
+			<div className={styles.container}>
 				<Card></Card>
 			</div>
 		</>

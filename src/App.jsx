@@ -33,10 +33,17 @@ function App() {
 		});
 	};
 
+    const deleteHandler = (todoId) => {
+        setTodo((prevTodo) => {
+            const updateTodo = prevTodo.filter(item => item.id !== todoId);
+            return updateTodo;
+        })
+    }
+
 	return (
 		<div className={styles.container}>
 			<NewTodo onAddTodo={addTodoHandler} />
-			<TodoItems items={todo} />
+			<TodoItems items={todo} onDeleteItem={deleteHandler}/>
 		</div>
 	);
 }

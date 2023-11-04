@@ -48,6 +48,11 @@
 	height: 70px;
 	border: none;
 	border-radius: 50px;
-	background: #253342;
+	background: #3f5f82;
 	color: white;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: #313e4d;
 }
