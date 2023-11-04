@@ -7,6 +7,7 @@ const TodoItems = (props) => {
 	return (
 		<>
 			<h1>Working</h1>
+			{props.items.length === 0 && <span>아이템을 추가해 주세요.</span>}
 			<div className={styles.container}>
 				{props.items.map((item) => (
 					<Card key={item.id}>
@@ -21,7 +22,6 @@ const TodoItems = (props) => {
 			</div>
 			<h1>Done</h1>
 			<div className={styles.container}>
-				<Card></Card>
 			</div>
 		</>
 	);
