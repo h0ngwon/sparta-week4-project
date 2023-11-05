@@ -15,7 +15,7 @@ const TodoItems = (props) => {
 							<TodoItem
 								items={item}
 								onDelete={props.onDeleteItem}
-                                onFinish={props.onFinishItem}
+								onFinish={props.onFinishItem}
 							/>
 						</Card>
 					))}
@@ -26,7 +26,12 @@ const TodoItems = (props) => {
 					.filter((item) => item.isDone === true)
 					.map((item) => (
 						<Card key={item.id}>
-							<TodoItem key={item.id} items={item} />
+							<TodoItem
+								key={item.id}
+								items={item}
+								onDelete={props.onDeleteItem}
+                                onCancel={props.onCancelItem}
+							/>
 						</Card>
 					))}
 			</div>

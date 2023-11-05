@@ -45,6 +45,15 @@ function App() {
 			const updateTodo = prevTodo.map((todo) =>
 				todo.id === todoId ? { ...todo, isDone: !todo.isDone } : todo
 			);
+			return updateTodo;
+		});
+	};
+
+	const cancelHandler = (todoId) => {
+		setTodo((prevTodo) => {
+			const updateTodo = prevTodo.map((todo) =>
+				todo.id === todoId ? { ...todo, isDone: !todo.isDone } : todo
+			);
             return updateTodo;
 		});
 	};
@@ -56,6 +65,7 @@ function App() {
 				items={todo}
 				onDeleteItem={deleteHandler}
 				onFinishItem={finishHandler}
+                onCancelItem={cancelHandler}
 			/>
 		</div>
 	);
