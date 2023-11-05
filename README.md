@@ -6,7 +6,7 @@
 <hr/>
 
 Components<br/>
-Card : 투두리스트 카드 UI 컴포넌트
-NewTodo: 투두리스트 추가 폼 컴포넌트
-TodoItems: 투두리스트 상태 분리 컴포넌트
-TodoItem : 단일 투두리스트 아이템 컴포넌트
+Card : 투두리스트 카드 UI 컴포넌트<br/>
+NewTodo: 투두리스트 추가 폼 컴포넌트<br/>
+TodoItems: 투두리스트 상태 분리 컴포넌트<br/>
+TodoItem : 단일 투두리스트 아이템 컴포넌트<br/>
