@@ -33,17 +33,30 @@ function App() {
 		});
 	};
 
-    const deleteHandler = (todoId) => {
-        setTodo((prevTodo) => {
-            const updateTodo = prevTodo.filter(item => item.id !== todoId);
+	const deleteHandler = (todoId) => {
+		setTodo((prevTodo) => {
+			const updateTodo = prevTodo.filter((item) => item.id !== todoId);
+			return updateTodo;
+		});
+	};
+
+	const finishHandler = (todoId) => {
+		setTodo((prevTodo) => {
+			const updateTodo = prevTodo.map((todo) =>
+				todo.id === todoId ? { ...todo, isDone: !todo.isDone } : todo
+			);
             return updateTodo;
-        })
-    }
+		});
+	};
 
 	return (
 		<div className={styles.container}>
 			<NewTodo onAddTodo={addTodoHandler} />
-			<TodoItems items={todo} onDeleteItem={deleteHandler}/>
+			<TodoItems
+				items={todo}
+				onDeleteItem={deleteHandler}
+				onFinishItem={finishHandler}
+			/>
 		</div>
 	);
 }
