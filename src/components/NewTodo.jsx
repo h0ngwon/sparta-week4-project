@@ -23,6 +23,16 @@ const NewTodo = (props) => {
 			desc: desc,
 			isDone: false,
 		};
+        
+        if(title.trim().legnth === 0) {
+            alert('제목을 입력하세요');
+            return;
+        }
+
+        if(desc.trim().length === 0) {
+            alert("내용을 입력하세요");
+            return;
+        }
 
 		props.onAddTodo(data);
 		setTitle("");
