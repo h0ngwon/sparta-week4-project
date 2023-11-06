@@ -12,13 +12,11 @@
 
 .done {
 	border: 5px solid transparent;
-	background-size: 100%;
+	background-size: 50%;
 	background-image: linear-gradient(#fff, #fff),
 		linear-gradient(
 			135deg,
-			rgba(159, 176, 187, 1) 0%,
-			rgba(144, 31, 74, 1) 25%,
-			rgba(146, 221, 168, 1) 50%,
+			rgba(159, 176, 187, 1) 25%,
 			rgba(193, 124, 255, 1) 75%,
 			rgba(0, 173, 242, 1) 100%
 		);
@@ -29,6 +27,6 @@
 
 @keyframes gradient {
 	to {
-		background-size: 500%;
+		background-size: 400%;;
 	}
 }
