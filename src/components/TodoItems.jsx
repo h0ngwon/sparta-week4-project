@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "./UI/Card";
 import styles from "./TodoItems.module.css";
 import TodoItem from "./TodoItem";
 
@@ -11,13 +10,11 @@ const TodoItems = (props) => {
 				{props.items
 					.filter((item) => item.isDone === false)
 					.map((item) => (
-						<Card key={item.id}>
-							<TodoItem
-								items={item}
-								onDelete={props.onDeleteItem}
-								onFinish={props.onFinishItem}
-							/>
-						</Card>
+						<TodoItem
+							items={item}
+							onDelete={props.onDeleteItem}
+							onFinish={props.onFinishItem}
+						/>
 					))}
 			</div>
 			<h1>Done</h1>
@@ -25,14 +22,12 @@ const TodoItems = (props) => {
 				{props.items
 					.filter((item) => item.isDone === true)
 					.map((item) => (
-						<Card key={item.id}>
-							<TodoItem
-								key={item.id}
-								items={item}
-								onDelete={props.onDeleteItem}
-                                onCancel={props.onCancelItem}
-							/>
-						</Card>
+						<TodoItem
+							key={item.id}
+							items={item}
+							onDelete={props.onDeleteItem}
+							onCancel={props.onCancelItem}
+						/>
 					))}
 			</div>
 		</>
