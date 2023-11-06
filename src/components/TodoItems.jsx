@@ -11,6 +11,7 @@ const TodoItems = (props) => {
 					.filter((item) => item.isDone === false)
 					.map((item) => (
 						<TodoItem
+                            key={item.id}
 							items={item}
 							onDelete={props.onDeleteItem}
 							onFinish={props.onFinishItem}
