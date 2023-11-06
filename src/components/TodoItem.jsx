@@ -16,7 +16,7 @@ const TodoItem = (props) => {
 	};
 
 	return (
-		<Card>
+		<Card items={props.items}>
 			<div className={styles["item-container"]}>
 				<h3>{props.items.title}</h3>
 				<p>{props.items.desc}</p>
