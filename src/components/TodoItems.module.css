@@ -11,4 +11,5 @@ h1 {
     gap:15px;
     overflow: auto;
     white-space: nowrap;
+    margin-bottom: 20px;
 }
